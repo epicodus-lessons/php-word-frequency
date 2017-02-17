@@ -30,6 +30,7 @@ then in a web browser, navigate to 'localhost:8000_
 | matches single words | word: "the" phrase: "the" | "1" |
 | matches case-insensitive words in phrase | word: "tHe" phrase: "The" | "1" |
 | matches word in multiple word phrase | word: "the" phrase: "The man went to the park" | "2" |
+| matches word with punctuation | word: "Hello" phrase: "Hello there, hello, hello hello, there" | "4" |
 
 ## Known Bugs
 

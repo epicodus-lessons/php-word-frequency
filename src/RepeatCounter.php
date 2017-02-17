@@ -5,20 +5,13 @@
         {
             $count = 0;
             $user_word = strtolower($user_word);
-            $user_phrase = strtolower($user_phrase);
+            $user_phrase = str_word_count(strtolower($user_phrase), 1);
 
-            if ($user_word === $user_phrase)
-            {
-                ++$count;
-            }
-            
-            if (str_word_count($user_phrase) > 1)
-            {
-                $word_list = explode(' ', $user_phrase);
-                foreach ($word_list as $word) {
-                    if ($user_word === $word) {
-                        ++$count;
-                    }
+            foreach ($user_phrase as $word) {
+
+                if ($user_word === $word)
+                {
+                  ++$count;
                 }
             }
 

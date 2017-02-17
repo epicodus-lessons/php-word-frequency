@@ -16,5 +16,13 @@
         return $app['twig']->render('index.html.twig');
     });
 
+    $app->get('/count-results', function() use ($app) {
+        $findAMatch = new RepeatCounter;
+        if ($_GET) {
+          $results = $findAMatch->countRepeats($_GET['search-word'], $_GET['search-phrase']);
+        }
+        return $app['twig']->render('count-results.html.twig', array('results' => $results));
+    });
+
     return $app;
 ?>

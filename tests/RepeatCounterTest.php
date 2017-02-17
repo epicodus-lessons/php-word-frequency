@@ -72,5 +72,19 @@
             //assert
             $this->assertEquals("2", $results);
         }
+
+        function test_countRepeats_withPunctuation()
+        {
+            //arrange
+            $wordPhrase = new RepeatCounter;
+            $input_word = "Hello";
+            $input_phrase = "Hello there, hello, hello hello, there";
+
+            //act
+            $results = $wordPhrase->countRepeats($input_word, $input_phrase);
+
+            //assert
+            $this->assertEquals("4", $results);
+        }
     }
  ?>
