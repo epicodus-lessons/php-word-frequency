@@ -1,16 +1,16 @@
 {{ include('base.html.twig') }}
 
 <html>
-  <body>
+  <body id='main'>
     <div class="container">
       <header>
-        <h1>Word Frequency Counter</h1>
+        <h1 class='well'>Word Frequency Counter</h1>
       </header>
       <form action='/count-results'>
-        <label for='search-word'>Enter a word to match: </label>
+        <label for='search-word'><span class='input-descriptions'>What word would you like me to find? </span></label>
         <input name='search-word' type='text' required>
         <br><br>
-        <label for='search-phrase'>Enter the phrase you would like to search through: </label>
+        <label for='search-phrase'><span class='input-descriptions'>Enter the phrase you would like to search through: </span></label>
         <input name='search-phrase' type='text' size='80' required>
         <br><br>
         <button type='submit' class='btn btn-primary'>Find a match</button>

@@ -1,3 +1,21 @@
-h1, h4 {
+h1, h4, form {
   text-align: center;
+  color: #26382F;
+}
+
+.well {
+  background-color: #CB9C74;
+}
+
+form {
+  margin-top: 40px;
+}
+
+.input-descriptions {
+  font-size: 30px;
+
+}
+
+body {
+  background-image: url('../img/cat.jpg');
 }
