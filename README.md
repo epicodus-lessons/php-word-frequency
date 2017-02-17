@@ -18,6 +18,15 @@ _This application will take in user input of a word as a string, and a phrase as
 
 ## Specifications
 
+| Expected Behavior | Input | Output |
+| ----------------- | ----- | ------ |
+| does not match if word is not within phrase | word: "a" phrase: "the" | "0" |
+| does not match partial words | word: "the" phrase: "theater" | "0" |
+| matches single letter words in single-letter word phrase | word: "a" phrase: "a" | "1" |
+| matches multiple letter words in single, multiple-letter, word phrase | word: "the" phrase: "the" | "1" |
+| matches case-insensitive words in phrase | word: "tHe" phrase: "The" | "1" |
+| matches word in multiple word phrase | word: "the" phrase: "The man went to the park" | "2" |
+
 ## Known Bugs
 
 _No known bugs at this time_
