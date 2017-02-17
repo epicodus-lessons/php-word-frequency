@@ -35,8 +35,8 @@
         {
             //arrange
             $wordPhrase = new RepeatCounter;
-            $input_word = "a";
-            $input_phrase = "a";
+            $input_word = "the";
+            $input_phrase = "the";
 
             //act
             $results = $wordPhrase->countRepeats($input_word, $input_phrase);
