@@ -8,16 +8,16 @@
       </header>
       <form action='/count-results'>
         <div id='labelOne'>
-          <label for='search-word'><span class='input-descriptions'>What word would you like me to find?</span></label>
+          <label for='search-word'><span class='output-descriptions'>What word would you like me to find?</span></label>
         </div>
 
-        <input name='search-word' type='text' required>
+        <input name='search-word' type='text' placeholder="Word to search for" required>
         <br><br>
         <div id='labelOne'>
-          <label for='search-phrase'><span class='input-descriptions'>Enter the phrase you would like to search through: </span></label>
+          <label for='search-phrase'><span class='output-descriptions'>Enter the phrase you would like to search through: </span></label>
         </div>
 
-        <textarea name='search-phrase' type='text' rows='3' required></textarea>
+        <textarea name='search-phrase' type='text' placeholder='Phrase to search through' required></textarea>
         <br><br>
         <button type='submit' class='btn'>Find a match</button>
       </form>

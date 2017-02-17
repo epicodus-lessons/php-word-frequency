@@ -29,9 +29,8 @@ textarea {
   height: 100px;
 }
 
-.input-descriptions {
+.output-descriptions {
   font-size: 30px;
-
 }
 
 body {
@@ -46,5 +45,9 @@ body {
   border: 2px solid black;
   background-color: #9D9074;
   color: white;
+  text-align: center;
+}
+
+.found-output {
   text-align: center;
 }
