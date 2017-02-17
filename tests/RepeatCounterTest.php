@@ -58,5 +58,19 @@
             //assert
             $this->assertEquals("1", $results);
         }
+
+        function test_countRepeats_multipleWordMatch()
+        {
+            //arrange
+            $wordPhrase = new RepeatCounter;
+            $input_word = "the";
+            $input_phrase = "The man went to the park";
+
+            //act
+            $results = $wordPhrase->countRepeats($input_word, $input_phrase);
+
+            //assert
+            $this->assertEquals("2", $results);
+        }
     }
  ?>
