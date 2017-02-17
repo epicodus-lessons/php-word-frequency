@@ -44,5 +44,19 @@
             //assert
             $this->assertEquals("1", $results);
         }
+
+        function test_countRepeats_caseInsensitiveMatch()
+        {
+            //arrange
+            $wordPhrase = new RepeatCounter;
+            $input_word = "tHe";
+            $input_phrase = "The";
+
+            //act
+            $results = $wordPhrase->countRepeats($input_word, $input_phrase);
+
+            //assert
+            $this->assertEquals("1", $results);
+        }
     }
  ?>
