@@ -30,5 +30,19 @@
             //assert
             $this->assertEquals("0", $results);
         }
+
+        function test_countRepeats_oneLetterWordMatch()
+        {
+            //arrange
+            $wordPhrase = new RepeatCounter;
+            $input_word = "a";
+            $input_phrase = "a";
+
+            //act
+            $results = $wordPhrase->countRepeats($input_word, $input_phrase);
+
+            //assert
+            $this->assertEquals("1", $results);
+        }
     }
  ?>
