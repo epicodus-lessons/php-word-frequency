@@ -7,13 +7,19 @@
         <h1 class='well'>Word Frequency Counter</h1>
       </header>
       <form action='/count-results'>
-        <label for='search-word'><span class='input-descriptions'>What word would you like me to find? </span></label>
+        <div id='labelOne'>
+          <label for='search-word'><span class='input-descriptions'>What word would you like me to find?</span></label>
+        </div>
+
         <input name='search-word' type='text' required>
         <br><br>
-        <label for='search-phrase'><span class='input-descriptions'>Enter the phrase you would like to search through: </span></label>
-        <input name='search-phrase' type='text' size='80' required>
+        <div id='labelOne'>
+          <label for='search-phrase'><span class='input-descriptions'>Enter the phrase you would like to search through: </span></label>
+        </div>
+
+        <textarea name='search-phrase' type='text' rows='3' required></textarea>
         <br><br>
-        <button type='submit' class='btn btn-primary'>Find a match</button>
+        <button type='submit' class='btn'>Find a match</button>
       </form>
     </div>
   </body>

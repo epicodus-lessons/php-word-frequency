@@ -11,6 +11,24 @@ form {
   margin-top: 40px;
 }
 
+#labelOne, #labelTwo {
+  background-color: #B4A386;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+#labelOne {
+  width: 570px;
+}
+
+textarea {
+  width: 400px;
+  height: 100px;
+}
+
 .input-descriptions {
   font-size: 30px;
 
@@ -18,4 +36,15 @@ form {
 
 body {
   background-image: url('../img/cat.jpg');
+  background-color: #DDBB9C;
+}
+
+.btn {
+  width: 300px;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid black;
+  background-color: #9D9074;
+  color: white;
+  text-align: center;
 }
