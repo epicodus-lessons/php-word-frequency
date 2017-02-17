@@ -16,5 +16,19 @@
             //assert
             $this->assertEquals("0", $results);
         }
+
+        function test_countRepeats_noPartialMatch()
+        {
+            //arrange
+            $wordPhrase = new RepeatCounter;
+            $input_word = "the";
+            $input_phrase = "theater";
+
+            //act
+            $results = $wordPhrase->countRepeats($input_word, $input_phrase);
+
+            //assert
+            $this->assertEquals("0", $results);
+        }
     }
  ?>
